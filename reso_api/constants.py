@@ -1,0 +1,4 @@
+class FORMATS:
+    JSON_FORMAT = 'json'
+    XML_FORMAT = 'xml'
+    VALID_OUTPUT_FORMATS = [JSON_FORMAT, XML_FORMAT]
