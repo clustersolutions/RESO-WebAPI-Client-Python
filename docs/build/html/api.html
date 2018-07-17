@@ -1,0 +1,266 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HttpRequest (reso_api.request.HttpRequest) &#8212; RESO WebAPI Client Python 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exceptions (reso_api.exceptions)" href="exceptions.html" />
+    <link rel="prev" title="RESO (reso_api.reso.RESO)" href="reso.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="httprequest-reso-api-request-httprequest">
+<h1>HttpRequest (reso_api.request.HttpRequest)<a class="headerlink" href="#httprequest-reso-api-request-httprequest" title="Permalink to this headline">¶</a></h1>
+<p>While initializing, following parameters are required:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>reso</td>
+<td>RESO</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="request-httprequest-request">
+<h2>Request (HttpRequest.request)<a class="headerlink" href="#request-httprequest-request" title="Permalink to this headline">¶</a></h2>
+<p>This function is dedicated for executing given url in GET method and returning full response object.</p>
+<p>Following parameters must be set for RESO object:</p>
+<ul class="simple">
+<li>access_token</li>
+<li>api_request_url</li>
+</ul>
+<p>This method requires these parameters:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="9%" />
+<col width="71%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>request_url</td>
+<td>String</td>
+<td>URL where to execute GET request</td>
+</tr>
+<tr class="row-odd"><td>request_accept_type</td>
+<td>String</td>
+<td>Accept type header of a request, for example - ‘application/json’</td>
+</tr>
+</tbody>
+</table>
+<p>On successful HTTP 200 response, this function will return full response object.</p>
+</div>
+<div class="section" id="request-post-httprequest-request-post">
+<h2>Request_post (HttpRequest.request_post)<a class="headerlink" href="#request-post-httprequest-request-post" title="Permalink to this headline">¶</a></h2>
+<p>This function is dedicated for executing given url in POST method and returning full response object.</p>
+<p>Following parameters must be set for RESO object:</p>
+<ul class="simple">
+<li>access_token</li>
+<li>api_request_url</li>
+</ul>
+<p>This method requires these parameters:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="9%" />
+<col width="71%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>request_url</td>
+<td>String</td>
+<td>URL where to execute GET request</td>
+</tr>
+<tr class="row-odd"><td>request_accept_type</td>
+<td>String</td>
+<td>Accept type header of a request, for example - ‘application/json’</td>
+</tr>
+<tr class="row-even"><td>post_data</td>
+<td>Dict</td>
+<td>Data which must be sent</td>
+</tr>
+</tbody>
+</table>
+<p>On successful HTTP 200 response, this function will return full response object.</p>
+</div>
+<div class="section" id="request-to-file-httprequest-request-to-file">
+<h2>Request to file (HttpRequest.request_to_file)<a class="headerlink" href="#request-to-file-httprequest-request-to-file" title="Permalink to this headline">¶</a></h2>
+<p>This function is dedicated for executing given url in GET method and returning full response content in given file.</p>
+<p>Following parameters must be set for RESO object:</p>
+<ul class="simple">
+<li>access_token</li>
+<li>api_request_url</li>
+</ul>
+<p>This method requires these parameters:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="11%" />
+<col width="63%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>request_url</td>
+<td>String</td>
+<td>URL where to execute GET request</td>
+</tr>
+<tr class="row-odd"><td>filename</td>
+<td>String</td>
+<td>Full file path where to store response content</td>
+</tr>
+</tbody>
+</table>
+<p>These parameters are optional:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>request_accept_type</td>
+<td>String</td>
+<td>Accept type header of a request, for example - ‘application/json’</td>
+</tr>
+<tr class="row-odd"><td>output_format</td>
+<td>String</td>
+<td>output format ‘json’ or ‘xml’, in other case. If not provided -JSON format will be user</td>
+</tr>
+<tr class="row-even"><td>overwrite</td>
+<td>Boolean</td>
+<td>Whether to overwrite file if it exists or not</td>
+</tr>
+</tbody>
+</table>
+<p>On successful HTTP 200 response, this function will create file with full response content.</p>
+</div>
+<div class="section" id="request-metadata-openidauthentication-request-metadata">
+<h2>Request metadata (OpenIDAuthentication.request_metadata)<a class="headerlink" href="#request-metadata-openidauthentication-request-metadata" title="Permalink to this headline">¶</a></h2>
+<p>Executes metadata GET request on provided api url</p>
+<p>Following parameters must be set for RESO object:</p>
+<ul class="simple">
+<li>access_token</li>
+<li>api_request_url</li>
+</ul>
+<p>On successful HTTP 200 response, this function will return full response object.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">HttpRequest (reso_api.request.HttpRequest)</a><ul>
+<li><a class="reference internal" href="#request-httprequest-request">Request (HttpRequest.request)</a></li>
+<li><a class="reference internal" href="#request-post-httprequest-request-post">Request_post (HttpRequest.request_post)</a></li>
+<li><a class="reference internal" href="#request-to-file-httprequest-request-to-file">Request to file (HttpRequest.request_to_file)</a></li>
+<li><a class="reference internal" href="#request-metadata-openidauthentication-request-metadata">Request metadata (OpenIDAuthentication.request_metadata)</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="reso.html" title="previous chapter">RESO (reso_api.reso.RESO)</a></li>
+      <li>Next: <a href="exceptions.html" title="next chapter">Exceptions (reso_api.exceptions)</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, RESO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
