@@ -12,7 +12,7 @@ setup(
     version='0.1',
     description='SDK which provides easy OpenID authentication and authorization.'
                 'Also executes needed API requests with possibility to store response in a file',
-    url='https://github.com/RESO/RESO-WebAPI-Client-Python',
+    url='https://github.com/RESOStandards/RESO-WebAPI-Client-Python',
     author='RESO',
     author_email='justinask7@gmail.com',
     license='MIT',

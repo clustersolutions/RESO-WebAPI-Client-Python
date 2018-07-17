@@ -2,7 +2,7 @@
 
 Reso Web API Python client library allows developers to build applications by utilizing the Reso Web API. For more information please visit [www.reso.org](http://www.reso.org).
 
-All documentation can be found in -[`docs`](https://github.com/RESO/RESO-WebAPI-Client-Python/blob/master/docs/build/html/index.html) folder.
+All documentation can be found in -[`docs`](https://github.com/RESOStandards/RESO-WebAPI-Client-Python/blob/master/docs/build/html/index.html) folder.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ Python 3.6 and later.
 
 Install package via pip:
 ```
-pip install git+https://github.com/RESO/RESO-WebAPI-Client-Python.git
+pip install git+https://github.com/RESOStandards/RESO-WebAPI-Client-Python.git
 ```
 
 ## Dependencies
@@ -56,9 +56,9 @@ print(result);
 
 ## Example apps
 
-Several usage examples are provided in the [`examples/`](https://github.com/RESO/RESO-WebAPI-Client-Python/tree/master/examples) folder:
+Several usage examples are provided in the [`examples/`](https://github.com/RESOStandards/RESO-WebAPI-Client-Python/tree/master/examples) folder:
 
-- [`cli-example`](https://github.com/RESO/RESO-WebAPI-Client-Python/blob/master/examples/cli_example.py) - provides a sample console application to query RESO API data;
+- [`cli-example`](https://github.com/RESOStandards/RESO-WebAPI-Client-Python/blob/master/examples/cli_example.py) - provides a sample console application to query RESO API data;
 
 To configure the example app variables / settings - fill config.json file.
 
@@ -76,7 +76,7 @@ reso.set_logging_level('debug') # sets logging level. Possible values: 'debug', 
 
 ## Unit Tests
 
-The SDK code set contains Python unit tests. The tests reside in the [`tests/`](https://github.com/RESO/RESO-WebAPI-Client-Python/tree/master/tests) folder and covers core RESO WebAPI Client Python SDK functionality testing.
+The SDK code set contains Python unit tests. The tests reside in the [`tests/`](https://github.com/RESOStandards/RESO-WebAPI-Client-Python/tree/master/tests) folder and covers core RESO WebAPI Client Python SDK functionality testing.
 
 To run the tests fill the tests/config.json file with the appropriate API variables. Then, execute:
 

@@ -7,7 +7,7 @@ Installation
 
 The last stable release is available on PyPI and can be installed with ``pip``::
 
-    $ pip install git+https://github.com/RESO/RESO-WebAPI-Client-Python.git
+    $ pip install git+https://github.com/RESOStandards/RESO-WebAPI-Client-Python.git
 
 
 Requirements
