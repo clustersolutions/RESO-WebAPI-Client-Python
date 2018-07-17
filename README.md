@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RESO SDK Python
 
 Reso Web API Python client library allows developers to build applications by utilizing the Reso Web API. For more information please visit [www.reso.org](http://www.reso.org).
