@@ -90,9 +90,13 @@ class HttpRequest(object):
                     "Please, setup a valid request accept type, current - {}".format(request_accept_type)
                 )
             else:
+                try:
+                    msg = response.json()
+                except json.decoder.JSONDecodeError:
+                    msg = response
                 raise RequestError(
                     "Could not retrieve API response. "
-                    "Response: {}".format(response.json() if response.json() else response)
+                    "Response: {}".format(msg)
                 )
         return response
 
