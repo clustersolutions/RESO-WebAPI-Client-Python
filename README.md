@@ -1,6 +1,6 @@
 # RESO SDK Python
 
-Reso Web API Python client library allows developers to build applications by utilizing the Reso Web API. For more information please visit [www.reso.org](http://www.reso.org) or contact [github@reso.org][github@reso.org]. Specific questions about this repository should be posted to the 'Issues' section with the [Issue Template](ISSUE_TEMPLATE.md).
+Reso Web API Python client library allows developers to build applications by utilizing the Reso Web API. For more information please visit [www.reso.org](http://www.reso.org) or contact [github@reso.org](github@reso.org). Specific questions about this repository should be posted to the 'Issues' section with the [Issue Template](ISSUE_TEMPLATE.md).
 
 All documentation can be found in -[`docs`](https://github.com/RESOStandards/RESO-WebAPI-Client-Python/blob/master/docs/build/html/index.html) folder.
 
