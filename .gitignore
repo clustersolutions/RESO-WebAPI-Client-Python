@@ -1,8 +1,0 @@
-.idea
-!examples/config.json
-*.pyc
-*.json
-.eggs
-*.egg-info
-dist
-**/.DS_Store
