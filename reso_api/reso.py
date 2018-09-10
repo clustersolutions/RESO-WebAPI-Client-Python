@@ -14,7 +14,7 @@ class RESO(object):
         self.api_token_url = api_token_url
         self.api_request_url = api_request_url
         self.verify_ssl = verify_ssl
-        self.api_sdk_version = '0.0.1'
+        self.api_sdk_version = '0.0.2'
 
         self.logger = logging.getLogger(API_LOGGER_NAME)
         self.logger.setLevel(logging.WARNING)

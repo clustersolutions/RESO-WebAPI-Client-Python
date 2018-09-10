@@ -24,6 +24,8 @@ def cli_example():
     reso = RESO(
         client_id=configs['reso']['client_id'],
         client_secret=configs['reso']['client_secret'],
+        # Some vendors bypass access_token by passing and supplying a static value
+        access_token=None if 'access_token' not in configs['reso'] else configs['reso']['access_token'],
         api_auth_url=configs['reso']['api_auth_url'],
         api_token_url=configs['reso']['api_token_url'],
         verify_ssl=configs['reso']['verify_ssl'],
@@ -37,8 +39,11 @@ def cli_example():
     )
     response = req_obj.authorize(configs['username'], configs['password'])
     req_obj.auth_code = response
-    auth_token = req_obj.request_access_token()
-    reso.access_token = auth_token
+
+    if not reso.access_token:  # User did not supply access_token (most common case)
+        auth_token = req_obj.request_access_token()
+        reso.access_token = auth_token
+
     http_req = HttpRequest(
         reso=reso,
     )
@@ -46,7 +51,9 @@ def cli_example():
         request_url=configs['http_request']['request_path'],
         filename=configs['http_request']['filename'],
         request_accept_type=configs['http_request']['accept_type'],
-        output_format=configs['http_request']['output_format']
+        output_format=configs['http_request']['output_format'],
+        overwrite=True,
+        indent=4  # Set to None for pretty print not to be applied
     )
 
 
