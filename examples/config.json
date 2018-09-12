@@ -1,0 +1,22 @@
+{
+  "reso": {
+    "client_id": "",
+    "client_secret": "",
+    "api_auth_url": "",
+    "api_token_url": "",
+    "verify_ssl": false,
+    "api_request_url": ""
+  },
+  "open_id": {
+    "redirect_uri": "",
+    "scope": ""
+  },
+  "http_request": {
+    "request_path": "Property",
+    "accept_type": "json",
+    "filename": "<full_path>",
+    "output_format": "json"
+  },
+  "username": "",
+  "password": ""
+}
