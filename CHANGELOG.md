@@ -5,7 +5,7 @@ CURRENT VERSION: 0.0.1
 
 ## Unreleased 0.0.2 - 2018-09-10
 1) Added pretty print option for output .json files
-2) In Example, added option to allow user supplied Access Token
+2) In Example, added option to allow user supplied Access (Bearer) Token
 
 ## 0.0.1 - 2018-07-10
 Initial dev release of RESO SDK Python with these functions:
