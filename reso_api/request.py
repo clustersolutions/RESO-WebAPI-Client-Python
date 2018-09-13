@@ -139,7 +139,8 @@ class HttpRequest(object):
                 )
         return response
 
-    def request_to_file(self, request_url, filename, request_accept_type=None, output_format=None, overwrite=False):
+    def request_to_file(self, request_url, filename, request_accept_type=None,
+                        output_format=None, overwrite=False, indent=None):
         """
         Executes GET request and stores received content in a file.
         :param request_url: path where to execute GET request
@@ -147,6 +148,7 @@ class HttpRequest(object):
         :param request_accept_type: request accept type header value
         :param output_format: output format 'json' or 'xml'
         :param overwrite: whether overwrite file in case it exists or not
+        :param indent: Pretty format json output with tab space <indent>. None is no indent
         :return: True in case function has been completed successfully
         """
         full_file_path = self._validate_path(overwrite, filename)
@@ -166,7 +168,7 @@ class HttpRequest(object):
         with open(full_file_path, 'w+b') as f:
             try:
                 if output_format == FORMATS.JSON_FORMAT:
-                    f.write(json.dumps(response.json()).encode('utf-8'))
+                    f.write(json.dumps(response.json(), indent=indent).encode('utf-8'))
                 elif output_format == FORMATS.XML_FORMAT:
                     root = ElementTree.fromstring(response.text)
                     tree = ElementTree.ElementTree(root)
